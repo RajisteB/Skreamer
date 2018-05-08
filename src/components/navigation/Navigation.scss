@@ -1,0 +1,98 @@
+@import '../../styles.scss';
+@import url('https://fonts.googleapis.com/css?family=Arizonia');
+// =====================
+// USER BAR
+// ---------------------
+.userbar {
+  color: $eighty-white;
+  width: 100%;
+  height: 4.5vh;
+  padding: 0px 5px;
+  background: darken($shade-black, 10%);
+  font-weight: 300;
+  letter-spacing: 0.6px;
+  border-bottom: 1px solid limegreen;
+  @include flex-mix(row, space-between, center);
+}
+.user {
+  cursor: pointer;
+  font-weight: bold;
+  padding-right: 20px;
+  @include flex-mix(row, space-between, center);
+  i {
+    padding: 0px 10px;
+  }
+}
+// =====================
+// SIDE BAR
+// ---------------------
+.sidebar {
+  width: 10vw;
+  height: 100%;
+  background: darken($shade-black, 10%);
+  border-right: 1px solid limegreen;
+  @include flex-mix(column, flex-start, center);
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+.logo {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid limegreen;
+  h1 {
+    color: $shade-black;
+    font-size: 100px;
+    font-family: 'Arizonia', cursive;
+    text-shadow: 4px 4px 1px limegreen;
+    padding-right: 35px;
+  }
+}
+.weather {
+  color: $eighty-white;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid limegreen;
+  @include flex-mix(row, center, center);
+  h4 {
+    padding: 10px;
+    font-weight: 300;
+  }
+  img {
+    margin: 12px;
+    height: 40px;
+    width: 40px;
+  }
+}
+.menu {
+  width: 100%;
+  margin-top: 40px;
+  .link {
+    cursor: pointer;
+    padding: 8px;
+    font-weight: 300;
+    @include flex-mix(row, flex-start, center);
+    h5 {
+      color: $eighty-white;
+      font-size: 90%;
+      margin-left: 7px;
+    }
+  }
+}
+#circle0 { color: $purple; }
+#circle1 { color: $light-blue; }
+#circle2 { color: $yellow; }
+#circle3 { color: $cool-blue; }
+#circle4 { color: $pink; }
+#circle5 { color: limegreen; }
+#circle6 { color: $orange; }
+#circle7 { color: $red; }
+#circle8 { color: $naval; }
+#circle9 { color: #ffc048; }
+#circle10 { color: #1dd1a1; }
+
+
+@media (max-width: 650px) {
+  .userbar
+}

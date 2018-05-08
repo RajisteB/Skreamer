@@ -1,0 +1,78 @@
+// =====================
+// COLORS
+// ---------------------
+$red: #e84118;
+$pink: #eb4d4b;
+$naval: #40739e;
+$green: #6ab04c;
+$purple: #9c88ff;
+$orange: #f0932b;
+$yellow: #f9ca24;
+$cool-blue: #c7ecee;
+$light-blue: #7ed6df;
+$shade-black: #2C3A47;
+$fifty-black: rgba(0, 0, 0, 0.5);
+$fifty-white: rgba(250, 250, 250, 0.5);
+$eighty-black: rgba(0, 0, 0, 0.8);
+$eighty-white: rgba(250, 250, 250, 0.8);
+$twenty-black: rgba(0, 0, 0, 0.2);
+$twenty-white: rgba(250, 250, 250, 0.2);
+
+// =====================
+// FONT SIZES
+// ---------------------
+h1 { font-size: 2em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.17em; }
+h4 { font-size: 1.12em; }
+h5 { font-size: .83em; }
+h6 { font-size: .67em; }
+
+// =====================
+// FLEXBOX MIX INS
+// ---------------------
+@mixin flex-mix($direction, $content, $items) {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: $items;
+  flex-direction: $direction;
+  justify-content: $content;
+}
+
+// =====================
+// BACKGROUND IMAGES
+// ---------------------
+@mixin bg-image($url, $size, $position) {
+  background-size: $size;
+  background-image: url($url);
+  background-repeat: no-repeat;
+  background-position: $position;
+}
+
+// =========================
+// MATERIAL UI BOX SHADOWS
+// -------------------------
+@mixin shadow-lvl-1() { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+@mixin shadow-lvl-2() { box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); }
+@mixin shadow-lvl-3() { box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); }
+@mixin shadow-lvl-4() { box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); }
+@mixin shadow-lvl-5() { box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); }
+@mixin shadow-lvl-6() { box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22); }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

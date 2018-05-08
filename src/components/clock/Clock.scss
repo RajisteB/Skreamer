@@ -1,0 +1,37 @@
+@import '../../styles.scss';
+
+.clock {
+  font-weight: 300;
+  @include flex-mix(row, center, center);
+  width: 20%;
+  .pulse {
+    width: 14px;
+    height: 14px;
+    margin: 0px 6px;
+    background: limegreen;
+    text-align: center;
+    border-radius: 50%;
+    animation: glow 3s linear infinite;
+  }
+}
+@keyframes glow {
+  0% {
+    box-shadow: 0px 0px 0px 0px rgba(90, 215, 90, 0.7);
+  }
+  40% {
+    box-shadow: 0px 0px 0px 8px rgba(90, 215, 90, 0);
+  }
+  80% {
+    box-shadow: 0px 0px 0px 8px rgba(90, 215, 90, 0);
+  }
+  100% {
+    box-shadow: 0px 0px 0px 0px rgba(90, 215, 90, 0);
+  }
+}
+
+@media (max-width: 650px) {
+  .clock {
+    width: 100%;
+    text-align: center;
+  }
+}

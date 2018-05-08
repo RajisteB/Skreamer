@@ -3,16 +3,16 @@ import Sidebar from '../navigation/Sidebar';
 import Content from './Content';
 import './Dashboard.css';
 import { Switch, Route } from 'react-router-dom';
-import { newsRoute, intlNewsRoute, sourceRoute } from '../../config_keys.js';
+// import { newsRoute, intlNewsRoute, sourceRoute } from '../../config_keys.js';
 
 const Dashboard = () => {
-  // let newsRoute,
-  //     sourceRoute,
-  //     intlNewsRoute;
+  let newsRoute,
+      sourceRoute,
+      intlNewsRoute;
 
-  // newsRoute = 'https://newsapi.org/v2/top-headlines?country=us&pageSize=20&category=';
-  // intlNewsRoute = 'https://newsapi.org/v2/top-headlines?language=en&sources=';
-  // sourceRoute = 'https://newsapi.org/v2/top-headlines?sources=';
+  newsRoute = 'https://newsapi.org/v2/top-headlines?country=us&pageSize=20&category=';
+  intlNewsRoute = 'https://newsapi.org/v2/top-headlines?language=en&sources=';
+  sourceRoute = 'https://newsapi.org/v2/top-headlines?sources=';
 
   return (
     <Switch>

@@ -11,7 +11,6 @@ const Dashboard = () => {
   const sourceRoute = process.env.REACT_APP_SOURCE_ROUTE;
 
   return (
-    <Switch>
       <div className="board-layout">
         <Sidebar />
         <Route path="/sports" render={() => <Content 
@@ -65,7 +64,6 @@ const Dashboard = () => {
           />} 
         />
       </div>
-    </Switch>
   )
 }
 

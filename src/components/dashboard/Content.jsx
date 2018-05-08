@@ -3,7 +3,6 @@ import './Dashboard.css';
 import MajorCard from '../cards/MajorCard';
 import MinorCardA from '../cards/MinorCardA';
 import MinorCardB from '../cards/MinorCardB';
-import { NEWS_KEY } from '../../config_keys.js';
 import axios from 'axios';
 import moment from 'moment';
 
@@ -20,6 +19,7 @@ class Content extends Component {
   }
 
   getArticles = (route) => {
+    const NEWS_KEY = process.env.REACT_APP_NEWS_KEY;
     let news_main_col,
         news_min_col_01,
         news_min_col_02;
@@ -95,9 +95,6 @@ class Content extends Component {
       </div>
     )
   }
-
-  // routes go here, render card components via map in each section incl a function calling the 
-// section name & axios data passed as props
 }
 
 export default Content;

@@ -1,8 +1,6 @@
 import axios from 'axios';
 import React, { Component } from 'react';
-import { WEATHER_KEY, WEATHER_ROUTE } from '../../config_keys';
 import Fog from './icons/003-cloud.png';
-// import Sky from './icons/007-sky.png';
 import Snow from './icons/005-nature.png';
 import Rain from './icons/006-rain.png';
 import Summer from './icons/004-summer.png';
@@ -21,6 +19,8 @@ class SidebarWeather extends Component {
   }
   
   getTemperature = () => {
+    const WEATHER_KEY = process.env.REACT_APP_WEATHER_KEY;
+    const WEATHER_ROUTE = process.env.REACT_APP_WEATHER_KEY;
     axios.get(`${WEATHER_ROUTE}zip=10010,us&units=imperial&apiKey=${WEATHER_KEY}`)
     .then (res => {
       this.setState({

@@ -44,7 +44,7 @@ class Content extends Component {
       console.log(news_main_col);
 
       this.setState({
-        main: news_main_col,
+        main: articles,
         col1: news_min_col_01,
         col2: news_min_col_02,
         apiDataLoaded: true
@@ -73,7 +73,7 @@ class Content extends Component {
               : <div>Loading...</div>
             }
           </div>
-          <div className="section-02">
+          {/* <div className="section-02">
             {
               apiDataLoaded ?
                 col1.map((article, i) => {
@@ -90,7 +90,7 @@ class Content extends Component {
                 })
                 : <div>Loading...</div>
             }
-          </div>
+          </div> */}
         </div>
       </div>
     )

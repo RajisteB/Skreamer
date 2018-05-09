@@ -18,7 +18,7 @@
   }
   &:hover {
     //background: #dfe4ea;
-    background-color: lighten($shade-black, 5%);
+    background-color: darken($shade-black, 4%);
     color: rgba(250, 250, 250, 0.95);
     a {
       transition: 0.55s ease-in-out;

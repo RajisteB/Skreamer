@@ -13,7 +13,6 @@ class Userbar extends Component {
   }
 
   handleMenuClick = () => {
-    console.log('Clicked - state: ' + this.state.visible)
     this.setState({
       visible: !this.state.visible
     })
@@ -21,7 +20,6 @@ class Userbar extends Component {
 
   handleResize = () => {
     let w = window.innerWidth;
-    console.log(w);
     this.setState({
       size: w
     })
@@ -35,11 +33,8 @@ class Userbar extends Component {
     let slide, { visible, size } = this.state;
 
     if (size >= 800) {
-      console.log(size);
-      console.log('greater than 900px')
       slide = null;
     } else {
-      console.log('less than 900px')
       slide = <Slidenavbar onclick={this.handleMenuClick} visible={visible} />;
     }
 

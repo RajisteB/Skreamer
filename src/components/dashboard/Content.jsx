@@ -12,8 +12,6 @@ class Content extends Component {
     super(props);
     this.state = {
       main: [],
-      col1: [],
-      col2: [],
       apiDataLoaded: false
     }
   }
@@ -38,15 +36,12 @@ class Content extends Component {
 
       })
 
-      news_main_col = articles.slice(0, 7);
-      news_min_col_01 = articles.slice(7, 14);
-      news_min_col_02 = articles.slice(14, articles.length);
-      console.log(news_main_col);
+      // news_main_col = articles.slice(0, 7);
+      // news_min_col_01 = articles.slice(7, 14);
+      // news_min_col_02 = articles.slice(14, articles.length);
 
       this.setState({
         main: articles,
-        col1: news_min_col_01,
-        col2: news_min_col_02,
         apiDataLoaded: true
       })
     })

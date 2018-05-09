@@ -57,7 +57,7 @@
   width: 100vw;
   height: 80%;
   @include flex-mix(column, space-around, flex-start);
-  a {
+  .slide-menu-link {
     text-decoration: none;
     list-style-type: none;
   }

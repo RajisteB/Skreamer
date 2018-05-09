@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import './Navigation.css';
 
 const Slidenavbar = (props) => {
@@ -38,9 +39,9 @@ const Slidenavbar = (props) => {
           <ul className="slidenav-menu">
             {topics.map((topic, i) => {
               return (
-                <a href={`${topic.toLowerCase()}`} className="slide-menu-link" key={i}>
+                <Link to={`/${topic.toLowerCase()}`} className="slide-menu-link" key={i}>
                   <li className="slidenav-li">{topic}</li>
-                </a>
+                </Link>
               )
             })}
           </ul>

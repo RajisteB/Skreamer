@@ -38,7 +38,7 @@ const Slidenavbar = (props) => {
           <ul className="slidenav-menu">
             {topics.map((topic, i) => {
               return (
-                <a href={`/${topic.toLowerCase()}`} className="slide-menu-link" key={i}>
+                <a href={`${topic.toLowerCase()}`} className="slide-menu-link" key={i}>
                   <li className="slidenav-li">{topic}</li>
                 </a>
               )

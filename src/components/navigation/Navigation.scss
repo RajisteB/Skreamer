@@ -15,7 +15,7 @@
   box-sizing: border-box;
   font-weight: 400;
   letter-spacing: 0.03em;
-  border-bottom: 2px solid limegreen;
+  // border-bottom: 2px solid limegreen;
   @include flex-mix(row, space-between, center);
 }
 // =====================
@@ -93,7 +93,7 @@
 // ---------------------
 .sidebar {
   width: 12%;
-  height: 96vh;
+  height: 100vh;
   background: darken($shade-black, 10%);
   border-right: 1px solid limegreen;
   @include flex-mix(column, flex-start, center);

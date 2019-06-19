@@ -7,14 +7,14 @@
 .board-layout {
   width: 100%;
   // background: green;
-  margin-top: 13.5vh;
+  // margin-top: 13.5vh;
   @include flex-mix(row, center, flex-start);
   flex-wrap: nowrap;
 }
 .content-container {
   // background: red;
   width: 98%;
-  height: 100%;
+  height: 100vh;
   // overflow: scroll;
   // @include flex-mix(column, flex-start, center);
 }
@@ -65,7 +65,7 @@
 
 @media (min-width: 50em ) {
   .board-layout {
-    margin-top: 1.8em;
+    margin-top: 1.4em;
   }
   .content {
     height: 94vh;

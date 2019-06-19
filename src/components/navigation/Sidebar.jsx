@@ -22,7 +22,7 @@ const Sidebar = () => {
         <div className="logo">
           <h1>S</h1>
         </div>
-        <SidebarWeather />
+        {/* <SidebarWeather /> */}
         <div className="menu">
           <ul>
             {topics.map((category, i) => {

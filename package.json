@@ -23,5 +23,9 @@
     "build": "npm-run-all build-css build-js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  },
+  "homepage": "http://www.rajisteb.github.io/skreamer"
 }

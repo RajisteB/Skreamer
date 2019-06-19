@@ -22,7 +22,7 @@ class SidebarWeather extends Component {
     const WEATHER_KEY = process.env.REACT_APP_WEATHER_KEY;
     const WEATHER_ROUTE = process.env.REACT_APP_WEATHER_ROUTE;
     axios.get(`${WEATHER_ROUTE}zip=10010,us&units=imperial&apiKey=${WEATHER_KEY}`)
-    .then (res => {
+    .then(res => {
       console.log(res.data);
       this.setState({
         temp: Math.floor(Math.round(res.data.main.temp)),

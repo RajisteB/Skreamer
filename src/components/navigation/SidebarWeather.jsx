@@ -30,6 +30,9 @@ class SidebarWeather extends Component {
         id: res.data.weather[0].id,
       })
     })
+    .catch(err => {
+      console.log(err);
+    });
   }
   
   componentDidMount() {

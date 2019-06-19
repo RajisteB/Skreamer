@@ -24,6 +24,7 @@ class Content extends Component {
 
     axios.get(`${route}${NEWS_KEY}`)
     .then(res => {
+      console.log(res);
       let articles = res.data.articles;
 
       articles.map(function(article) {

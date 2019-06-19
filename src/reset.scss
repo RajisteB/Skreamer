@@ -90,3 +90,7 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+
+*, html, body {
+  box-sizing: border-box;
+}

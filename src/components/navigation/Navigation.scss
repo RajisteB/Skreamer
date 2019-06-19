@@ -15,7 +15,7 @@
   box-sizing: border-box;
   font-weight: 400;
   letter-spacing: 0.03em;
-  // border-bottom: 2px solid limegreen;
+  border-bottom: 2px solid limegreen;
   @include flex-mix(row, space-between, center);
 }
 // =====================

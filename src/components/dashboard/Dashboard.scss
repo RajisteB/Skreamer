@@ -14,7 +14,7 @@
 .content-container {
   // background: red;
   width: 98%;
-  height: 100vh;
+  // height: 100%;
   // overflow: scroll;
   // @include flex-mix(column, flex-start, center);
 }
@@ -65,7 +65,7 @@
 
 @media (min-width: 50em ) {
   .board-layout {
-    margin-top: 1.4em;
+    margin-top: 1.8em;
   }
   .content {
     height: 94vh;
